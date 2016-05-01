@@ -1,0 +1,14 @@
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetClientsByQuery xmlns="http://tempuri.org/Deltek.Vision.WebServiceAPI/Service1">
+      <ConnInfoXML><![CDATA[<VisionConnInfo>
+          <databaseDescription><%= database_name %></databaseDescription>
+          <userName><%= username %></userName>
+          <userPassword><%= password %></userPassword>
+          <integratedSecurity>Y</integratedSecurity>
+        </VisionConnInfo>]]></ConnInfoXML>
+        <Query><![CDATA[<%= query %>]]></Query>
+        <RecordDetail><![CDATA[<%= record_detail %>]]></RecordDetail>
+      </GetClientsByQuery>
+   </soap:Body>
+</soap:Envelope>

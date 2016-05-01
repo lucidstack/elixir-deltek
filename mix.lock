@@ -1,0 +1,2 @@
+%{"html_entities": {:hex, :html_entities, "0.3.0"},
+  "sweet_xml": {:hex, :sweet_xml, "0.6.1"}}
