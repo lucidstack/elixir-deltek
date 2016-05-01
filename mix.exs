@@ -22,7 +22,7 @@ defmodule Deltek.Mixfile do
 
   defp package do
     [maintainers: ["Andrea Rossi"],
-     files: ["lib", "mix.exs", "README.md", "LICENSE"],
+     files: ["lib", "priv", "mix.exs", "README.md", "LICENSE"],
      licenses: ["MIT"],
      links: %{"Github" => "https://github.com/lucidstack/elixir-deltek"}]
   end
