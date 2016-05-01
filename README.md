@@ -68,10 +68,9 @@ Deltek.employees(25, 50)
 ## Clients
 
 # Retrieve a client by name (implemented with %LIKE%)
-Deltek.client_by_name(name: "Grand Budapest")
-
+Deltek.client(name: "Grand Budapest")
 # Retrieve a client by its id (usually found in projects details)
-Deltek.client_by_id(id: "231")
+Deltek.client(id: "231")
 
 # Retrieve the first 10 clients
 Deltek.clients
