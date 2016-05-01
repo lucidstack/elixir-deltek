@@ -10,7 +10,7 @@ Be sure to have `curl` installed. That's pretty much it! 👍🏻
 Add a line to your deps in `mix.exs`:
 ```
   def deps do
-    [{:deltek, "~> 0.0.1"}]
+    [{:deltek, "~> 0.0.2"}]
   end
 ```
 
