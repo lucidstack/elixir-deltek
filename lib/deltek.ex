@@ -4,9 +4,10 @@ defmodule Deltek do
   alias Deltek.Requester
   alias Deltek.Template
 
-  @templates_dir "lib/deltek/templates"
-  @projects_xml Path.join(@templates_dir, "get_projects_by_query.xml.eex")
-  @clients_xml Path.join(@templates_dir, "get_clients_by_query.xml.eex")
+  @templates_dir :code.priv_dir(:deltek) |> Path.join("templates")
+
+  @projects_xml  Path.join(@templates_dir, "get_projects_by_query.xml.eex")
+  @clients_xml   Path.join(@templates_dir, "get_clients_by_query.xml.eex")
   @employees_xml Path.join(@templates_dir, "get_employees_by_query.xml.eex")
 
   def start(_type, _args) do
